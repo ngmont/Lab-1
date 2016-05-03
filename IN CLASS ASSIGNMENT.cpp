@@ -28,9 +28,9 @@
 using namespace std;
 
 //place prototypes here
-float calc_grade_pts (float Grade, int Credit_Hrs);
-void display_data (string Name, float GPA);
-float Calc_GPA (Total_Credit_HRS);
+float calc_grade_pts (float Grade, int Credit_Hrs)
+float calc_gpa (float Total_Credit_HRS, int Total_Grade_Points)
+void display_data (string Name, float GPA)
 
 int main()
 {
@@ -38,8 +38,8 @@ int main()
 	const int QUIT = -1;
 	
 	//local variables
-    float Total_Grade_Points = 0;
-    int Total_Credit_HRS = 0;
+        float Total_Grade_Points = 0;
+        int Total_Credit_HRS = 0;
 	float Grade;
 	float Credit_Hrs;
 	float Grade_Pts;
