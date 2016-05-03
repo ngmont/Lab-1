@@ -42,16 +42,16 @@ using namespace std;
 int main()
 {
 	
-	//local constants
-	const string Absolute = 'A';   //absolute value
-	const string Power = 'P';   //power
-	const string QUIT = 'Q';   //quit
+  //local constants
+  const string Absolute = 'A';   //absolute value
+  const string Power = 'P';   //power
+  const string QUIT = 'Q';   //quit
 		
-	//local variables
-    int Num1;          //number value 1
-    int Num2;          //number value 2
-    string Letter;    //letters a, b, c
-    int Caclulation;  // absolute value or power
+  //local variables
+  int Num1;          //number value 1
+  int Num2;          //number value 2
+  string Letter;    //letters a, b, c
+  int Caclulation;  // absolute value or power
     
 	
 	/**************************start main program*********************/
