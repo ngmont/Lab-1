@@ -81,7 +81,7 @@ int main()
 	//call function to calcuate gpa
 	GPA = calc_gpa (Total_Credit_HRS,Total_Grade_Points);
 	//call function to display name and gpa
-    void display_data (string Name, float GPA)
+    display_data (Name, GPA);
 	
 }//end main
 
