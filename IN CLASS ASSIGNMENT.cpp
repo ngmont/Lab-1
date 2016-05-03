@@ -159,7 +159,8 @@ float calc_gpa (float Total_Credit_HRS, int Total_Grade_Points)
   /*************************************************************/
   
   //Dispalay Name
+  cout << Name; 
   
   //Display GPA
-
+  cout << GPA; 
 }
