@@ -3,10 +3,10 @@
  *Author         :  Natalia Montilla
  *Date           :  April 20th, 2016
  *Course/Section :  CSC110-002
-*Program Description: Ask the user to input ‘A’ for absolute value or ‘P’ for 
-*power or ‘Q’ for quit.  As long as the user didn’t quit then input two numbers.  
-*If they chose ‘a’ then find the absolute value of the first number – the second 
-*number. If the chose ‘P’ then raise the first number to the power of the second 
+*Program Description: Ask the user to input â€˜Aâ€™ for absolute value or â€˜Pâ€™ for 
+*power or â€˜Qâ€™ for quit.  As long as the user didnâ€™t quit then input two numbers.  
+*If they chose â€˜aâ€™ then find the absolute value of the first number â€“ the second 
+*number. If the chose â€˜Pâ€™ then raise the first number to the power of the second 
 *number.  Display the answer.  If the user entered an invalid input, display an 
 *error.  Finally, prompt the user to perform another operation. I should be able 
 *to input upper or lower case letters.
@@ -38,6 +38,7 @@
 #include <ctime>
 using namespace std;
 
+// added comment
 int main()
 {
 	
