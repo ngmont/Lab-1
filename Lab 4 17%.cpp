@@ -8,7 +8,7 @@
  *BEGIN Find 17%
  *   Input 2 Number (or Quit)
  *   WHILE( Number != Quit)
- *    IF(Number is in Range) 
+ *    IF(Number is in greater than min and less than max) 
  *      Answer is 17% of Number
  *      Display Answer
  *    ELSE
@@ -27,10 +27,10 @@ using namespace std;
 int main()
 {
 	//local constants
-    const int MIN = 50;       //minimum number
-    const int MAX = 75;       //maximum number
-    const int QUIT = -1;      //sentinal value
-    const float PERCENT = .17;  //17%
+        const int MIN = 50;         //minimum number
+        const int MAX = 75;         //maximum number
+        const int QUIT = -1;        //sentinal value
+        const float PERCENT = .17;  //17%
     
 	//local variables
 	int Num;                  //any number
@@ -38,41 +38,42 @@ int main()
 	
 	/**************************start main program*********************/
 
-    //Input Number (or Quit)
-    cout << "\n";
-    cout << setw (48) << "Calculate 17% Lab ";
-    cout << "\n\n";
-    cout << setw (48) << "Num or -1 to Quit: " ; 
-    cin  >> Num; 
+        //Input Number (or Quit)
+        cout << "\n";
+        cout << setw (48) << "Calculate 17% Lab ";
+        cout << "\n\n";
+        cout << setw (48) << "Num or QUIT: " ; 
+        cin  >> Num; 
     
-    //WHILE( Number != Quit)
-    while(Num != QUIT)
-	{
+        //WHILE( Number != Quit)
+        while(Num != QUIT)
+ 	{
     
-       //IF(Number is in Range) 
-       if(Num > MIN && Num < MAX)
-       {
-         // Answer is 17% of Number
-         Ans = (float)Num * PERCENT;
+          //IF(Number is in Range) 
+          if(Num > MIN && Num < MAX)
+          {
+            // Answer is 17% of Number
+            Ans = (float)Num * PERCENT;
          
-         //Display Answer 
-         cout << setw (36) << "Answer:" << setw (14) << Ans;                 
-       }
-	   else	//If number is not in range						 
-         cout << "Error"; 
-         //END IF  
+            //Display Answer 
+            cout << setw (36) << "Answer:" << setw (14) << Ans;                 
+           }
+           
+          else	//If number is not in range						 
+            cout << "Error"; //END IF  
+       
                                     
    
-       //Input Next Number (or Quit)
-       system ("cls");
-       system ("pause");
+        //Input Next Number (or Quit)
+        system ("cls");
+        system ("pause");
        
-       cout << "\n";
-       cout << setw (48) << "Num or -1 to Quit: " ; 
-       cin  >> Num; 
+        cout << "\n";
+        cout << setw (48) << "Num or -1 to Quit: " ; 
+        cin  >> Num; 
 
        
-    } //End while loop
-    cout << "\n\n\n\n";
-} //End Program
-//END Find 17%
+        } //End while loop
+         cout << "\n\n\n\n";
+         
+} //END Find 17%
