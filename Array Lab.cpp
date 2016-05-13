@@ -78,7 +78,7 @@ int main()
        cin  >> Value; 
 
     //END WHILE 
-    ;
+    }
 
     //Clear Screen
     Screen (clr);
