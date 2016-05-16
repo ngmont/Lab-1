@@ -14,17 +14,18 @@
 *   Count = 0
 *   Input Num
 *   WHILE(Num is not Quit)
-*         IF(Num is in Range and divisible by 2)
-*            Add Num to Total
-*            Incriment count
-*         ELSE IF (Num is not in Range)
-*            Display error
-*         END IF
+*      IF(Num is in Range and divisible by 2)
+*         Add Num to Total
+*         Incriment count
+*      ELSE IF (Num is not in Range)
+*         Display error
+*      END IF
 *         Input Num
 *   END WHILE
 *   Display Total
 *   Display Count
 *END Calculating Positive Integers
+* 
     /********************************************************************/
 
 #include <iostream>
@@ -34,54 +35,52 @@ using namespace std;
 
 int main()
 {
-	//local constants
-	//local variables
-	int Num;        //any number value
-	int Total = 0;  //total will start at zero
-	int Count = 0;  //count begins at zero
-	int Quit = -1;  //initializer
-	int MIN = 0;   // lowest value
-	int MAX = 20;  // higheset value
+    //local constants
+    int QUIT = -1;  //quit value
+    int MIN = 0;   // lowest value
+    int MAX = 20;  // higheset value
+	
+    //local variables
+    int Num;        //any number value
+    int Total = 0;  //total will start at zero
+    int Count = 0;  //count begins at zero
+
      /**************************start main program*********************/
      
-     //BEGIN Calculating Positive Integers
+    //BEGIN Calculating Positive Integers
 
-     //Output title
-     cout << "\n"; 
-     cout << setw (55) << "Calculate Posotive Integers";
-     cout << "\n\n"; 
-     //Input Num
-     cout << setw (53) << "Input Num or Quit:       "; 
-     cin  >> Num;
-      
-     //begin while loop
- 
-     while(Num != Quit)    
-	 {
-	 	    //Check that Num is in range and divisible
-            if(Num > MIN && Num < MAX && Num % 2 == 0)
-            {      //Add num to total and incriment count
-                   Total += Num;                     
-                   Count++;}
-            //Checking if num is out of range
-            else if (!(Num > MIN && Num < MAX)){
-            
-                 //Display Error Message
-                 cout << "\n";
-                 cout << setw (42) << "Invalid Number";
-                 cout << "\n";
-            }                                  
-     // input new number                                              
-     cout << setw (53) << "Input Num or Quit:       "; 
-     cin  >> Num; 
-     } // end WHILE loop
-	
-     
-     //Display total and count 
-     cout << "\n";
-     cout << setw (53) << "Total:                   " << Total; 
-     cout << "\n";
-     cout << setw (54) << "Count:                   " << Count;                                           
-     return (0);
-}
-//END Calculating Positive Integers
+    //Input Num
+    cout << "Enter Number or QUIT: ";
+    cin  >> Num; 
+    
+    //WHILE(Num is not Quit)
+    {
+       //IF(Num is in Range and divisible by 2)
+       if  (Num > MIN && Num < MAX){
+       	
+           //Add Num to Total
+           Total += Num ; 
+           //Incriment count
+           Count ++; 
+           
+        //ELSE IF (Num is not in Range)
+        else 
+           //Display Error
+           cout << "Error"; 
+        //END IF
+        
+    //Input Num or QUIT
+    cout << "Enter Number or QUIT: ";
+    cin  >> Num; 
+    
+    //END WHILE
+    }
+    
+    //Display Total
+    cout << "Total: " << Total; 
+    
+    //Display Count
+    coout << "Count: " << Count;
+    
+}    //*END Calculating Positive Integers
+    
