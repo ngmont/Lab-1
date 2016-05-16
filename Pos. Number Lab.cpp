@@ -51,37 +51,28 @@ int main()
     //BEGIN Calculating Positive Integers
 
     //Input Num
-    cout << "Enter Number or QUIT: ";
+   cout << "Enter Number or QUIT: "; 
+   cin  >> Num; 
+ 
+ while (Num != QUIT) { 
+     if (Num > MIN && Num < MAX)
+     {
+         Total += Num; 
+         Count ++; 
+     }
+     
+    else 
+
+    cout << "Error"; 
+    
+    //input new number or quit
+    
+    cout << "Enter Number or QUIT: "; 
     cin  >> Num; 
     
-    //WHILE(Num is not Quit)
-    {
-       //IF(Num is in Range and divisible by 2)
-       if  (Num > MIN && Num < MAX){
-       	
-           //Add Num to Total
-           Total += Num ; 
-           //Incriment count
-           Count ++; 
-           
-        //ELSE IF (Num is not in Range)
-        else 
-           //Display Error
-           cout << "Error"; 
-        //END IF
-        
-    //Input Num or QUIT
-    cout << "Enter Number or QUIT: ";
-    cin  >> Num; 
-    
-    //END WHILE
     }
     
-    //Display Total
-    cout << "Total: " << Total; 
+    cout << "Total: " << Total;
+    cout << "Count: " << Count; 
     
-    //Display Count
-    coout << "Count: " << Count;
-    
-}    //*END Calculating Positive Integers
-    
+}
