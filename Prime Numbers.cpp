@@ -7,17 +7,7 @@
  * Input a number and indicae whether it is a prime number or not. 
  *
  * BEGIN Calculating Prime Numbers
- *  Input Num or QUIT
- *  WHILE (Num != Quit)
- *   MAX is equal to half the number
- *     IF (Num divisible by numbers in the range is equal to 0)
- *        Display Num is not a prime number
- *      ELSE IF (Num divisible by numbers in the range is not equal to 0) 
- *        Display Num is a prime number
- *      END IF 
- *   Clear Screen
- *      Input new Num or QUIT
- *   END WHILE
+ *  
  *END Calculating Prime Numbers
 *********************************************************************/
 
@@ -50,7 +40,7 @@ int main()
          for (Count < Num/2){
              
              if(Num % Count = 0)
-               //num is prime
+               //num is not prime
                Non_Prime_Count ++; 
                
              else if(Num % Count != 0)
