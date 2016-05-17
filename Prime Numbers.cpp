@@ -14,7 +14,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
-
+#include <string>
 using namespace std;
 
 int main()
@@ -25,11 +25,11 @@ int main()
 	const int QUIT = -1; //sentinal value
 	
 	//local variables
-	float Num;                  //any number
+	int Num;                  //any number *changed to int
     int Count = 2;            //initial count value
     int Non_Prime_Count = 0;    
     int Prime_Count = 0; 
-    int Ans;                  // Answer
+    string Ans;                  // changed to string
 	/**************************start main program*********************/
 	
     cout << "Enter number or QUIT: ";
@@ -37,9 +37,9 @@ int main()
     
     while (Num != QUIT){
          
-         for (Count < Num/2){
+         for (Count = 2; Count < Num/2; Count++){
              
-             if(Num % Count = 0)
+             if(Num % Count == 0) // changed to equality operator
                //num is not prime
                Non_Prime_Count ++; 
                
