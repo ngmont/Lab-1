@@ -33,35 +33,46 @@ int main()
 
 	//local constants
 	const int QUIT = -1; //sentinal value
-	const int MIN = 2;   //minimul number
 	
 	//local variables
-	int Num;            //any number
-	int Value;          // any number to test
-        int Count = 2;      //initial count value
-        
-   
+	float Num;                  //any number
+    int Count = 2;            //initial count value
+    int Non_Prime_Count = 0;    
+    int Prime_Count = 0; 
+    int Ans;                  // Answer
 	/**************************start main program*********************/
 	
+    cout << "Enter number or QUIT: ";
+    cin  >> Num; 
     
-    //BEGIN Calculating Prime Numbers
-    //Input Num
-    cout << "Input Num or Quit: ";
-    cin  >> Num;
-     
+    while (Num != QUIT){
+         
+         for (Count < Num/2){
+             
+             if(Num % Count = 0)
+               //num is prime
+               Non_Prime_Count ++; 
+               
+             else if(Num % Count != 0)
+                  //num is prime
+                  Prime_Count ++;
+            }
+        if (Prime_Count > 0)
+           Ans = "Num is Prime"; 
+           
+        else if (Non_Prime_Count > 0)
+            Ans = "Num is not Prime"; 
+            
+        cout << "Answer: " << Ans; 
+        
+        cout << "Enter new number or QUIT"; 
+        cin  >> Num; 
+        
+    }
+}
+
+        
+            
+        
+        
     
-    //Check if num is not sentinal value
-    while (Num != QUIT)
-    {   
-	 bool isPrime = true; 
-	for( Count < Num/2 && Num % Count != 0)  
-    {    if(Num % Count == 0)
-	        isPrime = fase; 
-    }
-    }
-}   //END Calculating Prime Numbers
-	
-	
-	
-	
-	
