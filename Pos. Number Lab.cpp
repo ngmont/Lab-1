@@ -28,51 +28,52 @@
 * 
     /********************************************************************/
 
-#include<iostream>
-#include<iomanip>
-#include<cstdlib>
+#include<iostream> 
+#include<iomanip> 
+#include<cstdlib> 
+using namespace std; 
 
-using namespace std;
+ 
+int main() 
+{ 
 
-int main()
-{
-    //local constants
-    int QUIT = -1;  //quit value
-    int MIN = 0;   // lowest value
-    int MAX = 20;  // higheset value
-	
-    //local variables
-    int Num;        //any number value
-    int Total = 0;  //total will start at zero
-    int Count = 0;  //count begins at zero
+   //local constants 
+ const int QUIT = -1;  //quit value 
+ const int MIN = 0;    // lowest value 
+ const int MAX = 20;   // higheset value 
 
-     /**************************start main program*********************/
-     
-    //BEGIN Calculating Positive Integers
+   //local variables 
+ int Num;        //any number value 
+ int Total = 0;  //total will start at zero 
+ int Count = 0;  //count begins at zero 
 
-    //Input Num
+//***********Begin Program ***********//
+ 
+ //Input number
+ cout << "Enter Number or QUIT: "; 
+ cin  >> Num; 
+ 
+ //while num is not quit and count is less than 10
+  while (Num != QUIT && Count < 10) {   
+   Count ++;
+    //if the number is in range, test to see if it is a prime number
+     if (Num > MIN && Num < MAX)
+     { 
+      if (Num % 2 == 0) Total += Num;
+         
+     } 
+     else //the number is not in range, display error
+
+     cout << "Error"; 
+    
+   //input new number or quit    
    cout << "Enter Number or QUIT: "; 
    cin  >> Num; 
- 
- while (Num != QUIT) { 
-     if (Num > MIN && Num < MAX)
-     {
-         Total += Num; 
-         Count ++; 
-     }
-     
-    else 
-
-    cout << "Error"; 
     
-    //input new number or quit
-    
-    cout << "Enter Number or QUIT: "; 
-    cin  >> Num; 
-    
-    }
-    
+  }
+  //Display the total and count. total should represent the amount of tries attemtped
     cout << "Total: " << Total;
     cout << "Count: " << Count; 
     
-}
+} //End program
+    
