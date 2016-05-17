@@ -1,5 +1,5 @@
 /**********************************************************************
- *Program Name   :   CSC 110 Array Input Using Sentinel
+ *Program Name   :   CSC 110 Empty Array Insert
  *Author         :   Natalia Montilla
  *Due Date       :   April 11, 2016
  *Course/Section :   CSC 110 - 001 
@@ -31,6 +31,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
 using namespace std;
 
 int main()
@@ -51,7 +52,7 @@ int main()
     //BEGIN Array Input Using Sentinel Value
 
     //Input first value or quit value
-    cout << "Enter Value or QUIT";
+    cout << "Enter Value or QUIT: ";
     cin  >> Value; 
 
     //WHILE (User did not enter the quit value) 
@@ -59,12 +60,12 @@ int main()
     {
 
     //Store the input in the array at position Count
-       Value >> Empty_Array;
-    //Increment Count by 1
+    	Empty_Array[Count] = Value;
+    	//Increment Count by 1
        Count ++;
   
     //IF (the array has been filled)
-    if (Count = SIZE)
+    if (Count == SIZE)
     {
     //Output message indicating max inputs have been reached
        cout << "Array is now full";
@@ -72,29 +73,31 @@ int main()
        QUIT >> Value;
 
      //ELSE //the array has not been filled
+    }
     else  	
     //Prompt the user for next input value or quit value
-       cout << "Enter Value or QUIT";
+       cout << "Enter Value or QUIT: ";
        cin  >> Value; 
 
     //END WHILE 
     }
 
     //Clear Screen
-    Screen (clr);
+    //system("cls");
 
     //Display Heading
-    cout << "Values in the Array";
+    cout << "Values in the Array" << endl;
 
     //FOR (Each value in the array)
     for(Pos = 0; Pos < Count; Pos ++)
     {
 
     //Display value on its own line
-    cout << Empty_Array [Pos];
-    Pos ++; 
+    cout << Empty_Array [Pos] << endl;
 
     }//END FOR
+
+    cout << endl;
     
 }//END Lab01 - Array Input Using Sentinel Value
 
