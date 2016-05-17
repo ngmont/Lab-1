@@ -21,13 +21,13 @@ int main()
 {
 
 
-	//local constants
-	const int QUIT = -1; //sentinal value
+    //local constants
+    const int QUIT = -1; //sentinal value
 	
-	//local variables
-	int Num;                  //any number *changed to int
+    //local variables
+    int Num;                  //any number 
     int Count = 2;            //initial count value
-    string Ans;                  // changed to string
+    string Ans;               // changed to string
     bool isPrime;
 	/**************************start main program*********************/
 	
@@ -35,7 +35,6 @@ int main()
     cin  >> Num; 
     
     while (Num != QUIT){
-         
         isPrime = true; 
         for (Count = 2; Count <= Num/2; Count++){
              
@@ -43,16 +42,15 @@ int main()
                //num is not prime
                isPrime = false;
                break;
-             } 
+               } 
               
-         }
+        }
         if (isPrime)
            Ans = "Num is Prime"; 
            
         else
            Ans = "Num is not Prime"; 
-            
-        cout << "Answer: " << Ans; 
+           cout << "Answer: " << Ans; 
         
         cout << "Enter new number or QUIT"; 
         cin  >> Num; 
