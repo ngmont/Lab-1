@@ -7,15 +7,16 @@
  * Input a number and indicae whether it is a prime number or not. 
  *
  * BEGIN Calculating Prime Numbers
- *  Input Num
+ *  Input Num or QUIT
  *  WHILE (Num != Quit)
- *      If(Num is divisible by A or B or C or D)
+ *   MAX is equal to half the number
+ *     IF (Num divisible by numbers in the range is equal to 0)
  *        Display Num is not a prime number
- *      ELSE IF (Num is not divisible by A or B or C or D) 
+ *      ELSE IF (Num divisible by numbers in the range is not equal to 0) 
  *        Display Num is a prime number
  *      END IF 
- *        Num is Quit
- *      Input new Num
+ *   Clear Screen
+ *      Input new Num or QUIT
  *   END WHILE
  *END Calculating Prime Numbers
 *********************************************************************/
@@ -32,12 +33,14 @@ int main()
 
 	//local constants
 	const int QUIT = -1; //sentinal value
+	const int MIN = 2;   //minimul number
 	
 	//local variables
 	int Num;            //any number
 	int Value;          // any number to test
-    int Count = 2;      //initial count value
-    bool isPrime = true; 
+        int Count = 2;      //initial count value
+        
+   
 	/**************************start main program*********************/
 	
     
