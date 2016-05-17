@@ -27,9 +27,8 @@ int main()
 	//local variables
 	int Num;                  //any number *changed to int
     int Count = 2;            //initial count value
-    int Non_Prime_Count = 0;    
-    int Prime_Count = 0; 
     string Ans;                  // changed to string
+    bool isPrime;
 	/**************************start main program*********************/
 	
     cout << "Enter number or QUIT: ";
@@ -37,21 +36,21 @@ int main()
     
     while (Num != QUIT){
          
-         for (Count = 2; Count < Num/2; Count++){
+        isPrime = true; 
+        for (Count = 2; Count <= Num/2; Count++){
              
-             if(Num % Count == 0) // changed to equality operator
+             if(Num % Count == 0) {// changed to equality operator
                //num is not prime
-               Non_Prime_Count ++; 
-               
-             else if(Num % Count != 0)
-                  //num is prime
-                  Prime_Count ++;
-            }
-        if (Prime_Count > 0)
+               isPrime = false;
+               break;
+             } 
+              
+         }
+        if (isPrime)
            Ans = "Num is Prime"; 
            
-        else if (Non_Prime_Count > 0)
-            Ans = "Num is not Prime"; 
+        else
+           Ans = "Num is not Prime"; 
             
         cout << "Answer: " << Ans; 
         
