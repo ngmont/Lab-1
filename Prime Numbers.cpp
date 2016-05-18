@@ -1,5 +1,5 @@
 /**********************************************************************
- *Program Name   :   Lab #5
+ *Program Name   :   Lab #5 - Prime Numbers
  *Author         :   Natalia Montilla
  *Date           :   March 30th, 2016
  *Course/Section :   CSC 110 ***002
@@ -49,8 +49,10 @@ int main()
     //Input Number	
     cout << "Enter number or QUIT: ";
     cin  >> Num; 
+    
     //While Num is not QUIT
     while (Num != QUIT){
+        
     	//Create bool isPrime equal to true and test it 
         isPrime = true; 
         //FOR (Count less than Num/2, incriment cout)
@@ -79,7 +81,7 @@ int main()
         }   
         //Ask user for a new number or QUIT
         cout << "\n";
-        cout << "Enter new number or QUIT"; 
+        cout << "Enter new number or QUIT: "; 
         cin  >> Num; 
         
   
@@ -87,13 +89,3 @@ int main()
 
 
 }//END PRIME NUMBER PROGRAM
-
-
-        
-            
-        
-        
-    
-
-        
-    
