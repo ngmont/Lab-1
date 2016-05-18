@@ -72,7 +72,9 @@ int main()
     
   }
   //Display the total and count. total should represent the amount of tries attemtped
+    cout << "\n";   
     cout << "Total: " << Total;
+    cout << "\n"; 
     cout << "Count: " << Count; 
     
 } //End program
