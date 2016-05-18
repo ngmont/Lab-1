@@ -46,7 +46,8 @@ int main()
  int Num;        //any number value 
  int Total = 0;  //total will start at zero 
  int Count = 0;  //count begins at zero 
-
+ int Prime_Count = 0; //counter for prime numbers
+ 
 //***********Begin Program ***********//
  
  //Input number
