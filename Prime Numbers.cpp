@@ -7,7 +7,8 @@
  * Input a number and indicae whether it is a prime number or not. 
  *
  * BEGIN Calculating Prime Numbers
- *  
+ * Input Nuber
+ * 
  *END Calculating Prime Numbers
 *********************************************************************/
 
