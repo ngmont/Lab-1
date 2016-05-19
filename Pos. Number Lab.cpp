@@ -46,7 +46,7 @@ int main()
  int Num;        //any number value 
  int Total = 0;  //total will start at zero 
  int Count = 0;  //count begins at zero 
- int Prime_Count = 0; //counter for prime numbers
+ int Pos_Count = 0; //counter for prime numbers
  
 //***********Begin Program ***********//
  
@@ -60,8 +60,10 @@ int main()
     //if the number is in range, test to see if it is a prime number
      if (Num > MIN && Num < MAX)
      { 
-      if (Num % 2 == 0) Total += Num;
-         
+      if (Num % 2 == 0){ 
+      Total += Num;
+      Pos_Count ++; 
+      } 
      } 
      else //the number is not in range, display error
 
@@ -70,13 +72,17 @@ int main()
    //input new number or quit    
    cout << "Enter Number or QUIT: "; 
    cin  >> Num; 
-    
+   
+  //end while loop 
   }
+ 
   //Display the total and count. total should represent the amount of tries attemtped
     cout << "\n";   
     cout << "Total: " << Total;
     cout << "\n"; 
     cout << "Count: " << Count; 
+    cout << "\n"; 
+    cout << "Pos Num Count: " << Pos_Count;
     
 } //End program
     
