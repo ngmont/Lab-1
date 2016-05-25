@@ -35,12 +35,13 @@ void end_message(string Name, float Message);
 
 int main()
 {
-	//local constants
-	int Mltple = 3;  //the number that will be brought to the highest power.  
-    string Message = "Have a nice day";
-
-	//local variables
-	int Num;         //# that will be cubed 
+  //local constants
+  int Mltple = 3;  //the number that will be brought to the highest power.  
+  string Message = "Have a nice day"; // closing message
+  int QUIT = 0;   // sentinal value
+  
+  //local variables
+  int Num;         //# that will be cubed 
      
  /***********************************************/
 //BEGIN Function Practice - find a cube
@@ -153,4 +154,4 @@ int main()
     //Clear the screen
     clear(scrn);
 
-	//END Function Practice - find a cube
+    //END Function Practice - find a cube
