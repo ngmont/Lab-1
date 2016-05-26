@@ -149,7 +149,7 @@ int main()
     cout << Message << endl;
 
 	//Pause the screen
-    pause (screen); 
+    system("PUASE"); 
 
     //Clear the screen
     clear(scrn);
