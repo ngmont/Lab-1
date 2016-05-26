@@ -89,26 +89,24 @@ int main()
  *   Return the result of calculation
  *END Function Practice - find a cube
  ********************************************************************/
- float calc_cube (float Ans, int Num); 
-
- int main {
+// FIXED 
+float calc_cube (int Num) { 
 
   //local constants
   int Mltple = 3;     //the number that will be brought to the highest power.  
 
   //local variables	
-  int Num;   //The number entered
-  int Ans;   //the answer is the cubed number
-  int pow;   //raising the number to a power
+  float Ans = 1;   //the answer is the cubed number
 /*********************************************/
 
 	//BEGIN Calculate Cube (int Num)
 
 	//Calculate Num to the 3rd power
-    Ans = pow (Num, Mltple); 
+    for (int i = 0; i < Mltple; i++)
+	Ans = Ans * Num;
 
 	//Return the result of calculation
-    return (Ans);
+    return Ans;
 
  }	//END Function Practice - find a cube
 
