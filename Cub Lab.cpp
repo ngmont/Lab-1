@@ -76,10 +76,10 @@ int main()
 
      //Pause screen
 
-//END Function Practice - find a cube
+} //END Function Practice - find a cube
 /********************************************************************
 
- *Function Name  :   Calculate Cube
+} *Function Name  :   Calculate Cube
  *Author         :   Natalia Montilla 
  *Date           :   
  *Program Description: This program will find the cube of any number. 
