@@ -29,8 +29,8 @@ using namespace std;
 
 //place prototypes here
 float calc_cube (float Ans, int Num); 
-void display_cube(string Ans, int pow);
-void end_message(); 
+void display_cube(float Ans);
+void end_message(int QUIT); 
 
 
 int main()
@@ -53,7 +53,7 @@ int main()
      while (Num != QUIT){
 
      //Call function to find cube of the input number
-     calc_cube(); 
+     calc_cube (Ans); 
 
      //Call function to display the cube
      display_cube();
@@ -76,7 +76,7 @@ int main()
 /********************************************************************
 
  *Function Name  :   Calculate Cube
- *Author         :  Natalia Montilla 
+ *Author         :   Natalia Montilla 
  *Date           :   
  *Program Description: This program will find the cube of any number. 
  *   the number will be received as a parameter.  It will then be 
@@ -95,19 +95,19 @@ float calc_cube (int Num) {
   int Mltple = 3;     //the number that will be brought to the highest power.  
 
   //local variables	
-  float Ans = 1;   //the answer is the cubed number
+  float Ans = 1;     //the answer is the cubed number
 /*********************************************/
 
-	//BEGIN Calculate Cube (int Num)
+    //BEGIN Calculate Cube (int Num)
 
-	//Calculate Num to the 3rd power
+    //Calculate Num to the 3rd power
     for (int i = 0; i < Mltple; i++)
 	Ans = Ans * Num;
 
-	//Return the result of calculation
+    //Return the result of calculation
     return Ans;
 
- }	//END Function Practice - find a cube
+ }  //END Function Practice - find a cube
 
  /********************************************************************
  *Function Name  :   Display Closing
@@ -125,7 +125,7 @@ float calc_cube (int Num) {
  *   Clear the screen
  *END Function Practice - find a cube
  ********************************************************************/
- void end_message(); 
+ void end_message(int QUIT); 
 
  int main {
 
