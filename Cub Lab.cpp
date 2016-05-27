@@ -36,12 +36,11 @@ void end_message(int QUIT);
 int main()
 {
   //local constants
-  int Mltple = 3;  //the number that will be brought to the highest power.  
   int QUIT = 0;   // sentinal value
   
   //local variables
   int Num;         //# that will be cubed 
-     
+  int Ans = 1;          
  /***********************************************/
 //BEGIN Function Practice - find a cube
 
@@ -99,7 +98,7 @@ float calc_cube (float Ans, int Num) {
   int Mltple = 3;     //the number that will be brought to the highest power.  
 
   //local variables	
-  float Ans = 1;     //the answer is the cubed number
+ 
 /*********************************************/
 
     //BEGIN Calculate Cube (int Num)
