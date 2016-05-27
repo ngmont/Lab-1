@@ -57,8 +57,8 @@ int main()
      calc_cube (Ans, Num); 
 
      //Call function to display the cube
-     display_cube(Ans);
-
+    
+     cout << "The cube of   " << Num << "is: " << Ans; 
      //Input next number or 0 to quit
      cout << "Enter new number or 0 to QUIT";
 
@@ -90,7 +90,7 @@ int main()
  *END Function Practice - find a cube
  ********************************************************************/
 // FIXED 
-float calc_cube (int Num) { 
+float calc_cube (float Ans, int Num) { 
 
   //local constants
   int Mltple = 3;     //the number that will be brought to the highest power.  
@@ -126,9 +126,8 @@ float calc_cube (int Num) {
  *   Clear the screen
  *END Function Practice - find a cube
  ********************************************************************/
- void end_message(int QUIT); 
+ void end_message(int QUIT){
 
- int main {
 
  //local constants
 
@@ -146,7 +145,7 @@ float calc_cube (int Num) {
     cout << "Have a nice day" << endl;
 
     //Pause the screen
-    system("PUASE"); 
+    system("PAUSE"); 
 
     //Clear the screen
     system("CLS");
