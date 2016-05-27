@@ -47,16 +47,17 @@ int main()
 
 
      //Input a number or 0 to quit
-	 cout << "Enter Number or 0 to QUIT"; 
-
+     cout << "Enter Number or 0 to QUIT"; 
+     cin  >> Num;
+     
      //WHILE (number entered is not QUIT)
      while (Num != QUIT){
 
      //Call function to find cube of the input number
-     calc_cube (Ans); 
+     calc_cube (Ans, Num); 
 
      //Call function to display the cube
-     display_cube();
+     display_cube(Ans);
 
      //Input next number or 0 to quit
      cout << "Enter new number or 0 to QUIT";
@@ -68,7 +69,7 @@ int main()
     system("CLS");
 
      //Call function to Display departing message
-     end_message();
+     end_message(QUIT);
 
      //Pause screen
 
