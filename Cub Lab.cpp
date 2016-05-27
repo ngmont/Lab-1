@@ -40,29 +40,32 @@ int main()
   
   //local variables
   int Num;         //# that will be cubed 
-  int Ans = 1;          
+  float Ans = 1;          
  /***********************************************/
 //BEGIN Function Practice - find a cube
-
+     
+      cout << "\n"; 
+     cout << setw(34) <<  "Function Lab"; 
 
      //Input a number or 0 to quit
+   
      cout << "\n";
-     cout << "Enter Number or 0 to QUIT: "; 
+     cout << setw (42) << "Enter Number or 0 to QUIT: "; 
      cin  >> Num;
      cout << "\n";
-     
+     //Ans = 1;
      //WHILE (number entered is not QUIT)
      while (Num != QUIT){
 
      //Call function to find cube of the input number
-     calc_cube (Ans, Num); 
-
+     Ans = calc_cube (Ans, Num); 
+    
      //Call function to display the cube
-     cout << "The cube of " << Num << " is: " << Ans << endl;
+     //cout << "The cube of " << Num << " is: " << Ans << endl;
 
      //Input a number or 0 to quit.
      cout << "\n"; 
-     cout << "Enter Number or 0 to QUIT: "; 
+     cout << setw (42) << "Enter Number or 0 to QUIT: "; 
      cin  >> Num;
      cout << "\n"; 
      //END WHILE
@@ -93,8 +96,8 @@ int main()
  *END Function Practice - find a cube
  ********************************************************************/
 // FIXED 
-float calc_cube (float Ans, int Num) { 
-
+float calc_cube (float Ans1, int Num1) { 
+   
   //local constants
   int Mltple = 3;     //the number that will be brought to the highest power.  
 
@@ -106,10 +109,11 @@ float calc_cube (float Ans, int Num) {
 
     //Calculate Num to the 3rd power
     for (int i = 0; i < Mltple; i++)
-	Ans = Ans * Num;
-
-    //Return the result of calculation
-    return Ans;
+	Ans1 = Ans1*Num1;
+    cout << setw(30) << "The cube of " << Num1 <<" is: " << Ans1 << "." << endl;
+    
+    ///Return the result of calculation
+    return Ans1;
 
  }  //END Function Practice - find a cube
 
