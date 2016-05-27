@@ -30,14 +30,13 @@ using namespace std;
 //place prototypes here
 float calc_cube (float Ans, int Num); 
 void display_cube(string Ans, int pow);
-void end_message(string Name, float Message); 
+void end_message(); 
 
 
 int main()
 {
   //local constants
   int Mltple = 3;  //the number that will be brought to the highest power.  
-  string Message = "Have a nice day"; // closing message
   int QUIT = 0;   // sentinal value
   
   //local variables
@@ -65,8 +64,8 @@ int main()
      //END WHILE
  }
 
-     //Clear Screen
-     clear(scrn);
+    //Clear the screen
+    system("CLS");
 
      //Call function to Display departing message
      end_message();
@@ -126,30 +125,29 @@ float calc_cube (int Num) {
  *   Clear the screen
  *END Function Practice - find a cube
  ********************************************************************/
- void end_message(string Message); 
+ void end_message(); 
 
  int main {
 
  //local constants
- string Message = "Have a nice day!";
 
  //local variables
 
- //******************************************//
+ //******************************************/
 
 
-	//BEGIN Display Closing
+    //BEGIN Display Closing
     
-	//Clear the screen
-    clear(scrn);
+    //Clear the screen
+    system("CLS");
 
-	//Display the closing message
-    cout << Message << endl;
+    //Display the closing message
+    cout << "Have a nice day" << endl;
 
-	//Pause the screen
+    //Pause the screen
     system("PUASE"); 
 
     //Clear the screen
-    clear(scrn);
-
+    system("CLS");
+ } 
     //END Function Practice - find a cube
