@@ -57,11 +57,14 @@ int main()
      calc_cube (Ans, Num); 
 
      //Call function to display the cube
-    
      cout << "The cube of   " << Num << "is: " << Ans; 
+     
      //Input next number or 0 to quit
      cout << "Enter new number or 0 to QUIT";
 
+     //Input a number or 0 to quit
+     cout << "Enter Number or 0 to QUIT"; 
+     cin  >> Num;
      //END WHILE
  }
 
