@@ -46,8 +46,10 @@ int main()
 
 
      //Input a number or 0 to quit
-     cout << "Enter Number or 0 to QUIT"; 
+     cout << "\n";
+     cout << "Enter Number or 0 to QUIT: "; 
      cin  >> Num;
+     cout << "\n";
      
      //WHILE (number entered is not QUIT)
      while (Num != QUIT){
@@ -56,14 +58,13 @@ int main()
      calc_cube (Ans, Num); 
 
      //Call function to display the cube
-     cout << "The cube of   " << Num << "is: " << Ans; 
-     
-     //Input next number or 0 to quit
-     cout << "Enter new number or 0 to QUIT";
+     cout << "The cube of " << Num << " is: " << Ans << endl;
 
-     //Input a number or 0 to quit
-     cout << "Enter Number or 0 to QUIT"; 
+     //Input a number or 0 to quit.
+     cout << "\n"; 
+     cout << "Enter Number or 0 to QUIT: "; 
      cin  >> Num;
+     cout << "\n"; 
      //END WHILE
  }
 
