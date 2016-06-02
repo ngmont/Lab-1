@@ -38,7 +38,7 @@
 using namespace std;
 
 //place prototypes here
-void fillarray (int Count);
+void fill_array (int Count);
 void display_array (int Pos);
 
 int main()
@@ -67,7 +67,7 @@ int main()
     {
 
     //Call a function to input data into an array
-    fillarray ( Value);
+    fill_array ( Value);
 
 
     //IF (the array has been filled)
@@ -92,7 +92,7 @@ int main()
     //system("cls");
 
     //Call a function to output the contents of the array.
-    display_array ( Pos);
+    display_array (Pos);
     
 }//END Lab01 - Array Input Using Sentinel Value
 
@@ -108,7 +108,7 @@ int main()
  *     Increment Count by 1
  *END Function Practice -filling the array
  ********************************************************************/
-void fillarray (int Count){
+void fill_array (int Count) {
    
   //local constants
     const int SIZE = 20;      //max size for array
@@ -129,8 +129,8 @@ void fillarray (int Count){
       Empty_Array[Count] = Value;
       //Increment Count by 1
        Count ++;
-    
- }END Function Practice -filling the array
+      return (Count); 
+ }//END Function Practice -filling the array
  
 
  /********************************************************************
@@ -144,7 +144,7 @@ void fillarray (int Count){
  *  Display value on its own line
  *END Function Practice - Display Array
  ********************************************************************/
- int display_array (int Pos; int Count){
+ int displayarray (int Pos){
 
   //local constants
     const int SIZE = 20;      //max size for array
@@ -154,7 +154,6 @@ void fillarray (int Count){
     int Empty_Array [SIZE];   //empty array
     int Value;                //values to be stored into array
     int Count = 0;            //cont which holds location in the array
-    int Pos;                  //tells position in array like count 
 
  //******************************************/
 
@@ -175,5 +174,6 @@ void fillarray (int Count){
 
     cout << endl;
 
+   return (Pos); 
   }
   //END Function Practice - Display Array  
