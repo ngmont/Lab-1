@@ -100,5 +100,3 @@ int main()
     cout << endl;
     
 }//END Lab01 - Array Input Using Sentinel Value
-
-
