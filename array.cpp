@@ -38,7 +38,7 @@
 using namespace std;
 
 //place prototypes here
-void fill_array (int[] array, int value, int pos);
+void fill_array (int array[], int value, int pos);
 void display_array (int Pos);
 
 int main()
